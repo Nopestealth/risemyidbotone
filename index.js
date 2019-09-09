@@ -35,10 +35,6 @@ client.on('message', message => {
             message.author.send(`Vous ne pouvez pas utiliser une autre commande que !changernom`)
         }
     }
-    else
-    {
-        message.delete(0);
-    }
 
     if (cmd === `${prefix}clear`) {
         if (message.member.roles.get('620250341807489044')) {
