@@ -16,26 +16,6 @@ client.on('message', message => {
     let cmd = messageArray[0];
     let args = messageArray.slice(1);
 
-    if (message.channel.id === `620571966193270784`) {
-        if (cmd === `${prefix}changernom`) {
-            message.delete(1000);
-
-            let cName = args.join(" ").slice(0);
-            if (!cName) return message.author.send(`Vous n'avez pas entrer votre nouveau "Prénom Nom"`)
-
-            message.member.setNickname(cName)
-            message.member.addRole(`619610703367503886`);
-            message.member.removeRole(`620571484209020950`);
-            message.author.send('Pseudonyme changé !');
-
-        }
-        else
-        {
-            message.delete(0)
-            message.author.send(`Vous ne pouvez pas utiliser une autre commande que !changernom`)
-        }
-    }
-
     if (cmd === `${prefix}clear`) {
         if (message.member.roles.get('620250341807489044')) {
             message.delete(1500);
