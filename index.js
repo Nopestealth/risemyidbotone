@@ -127,7 +127,7 @@ client.on('message', message => {
             let aMessage = args.join(" ").slice(0);
             if (!aMessage) return message.author.send(`Vous n'avez pas entrer de message à écrire en anonyme.`)
 
-            let darknetChannel = message.guild.channels.find(`name`, "📱-darknet");
+            let darknetChannel = message.guild.channels.find(`name`, "『📱-』darknet");
 
             darknetChannel.send(aMessage)
         }
