@@ -6,7 +6,7 @@ client.on('ready', () => {
 });
 
 client.on('guildMemberAdd', member => {
-    var role = member.guild.roles.find('name', "📛 Sans Papier 📛");
+    var role = member.guild.roles.find('name', "Citoyen");
     member.addRole(role);
 });
 
